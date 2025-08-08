@@ -1,11 +1,57 @@
-*{
+/* Universal*/
+* {
     margin: 0;
 }
 
-h1{
-    color: violet;
+/* Elemento */
+h1 {
+    color: blue;
 }
 
 div {
-    background-color: rgb(233, 236, 228);
+    background-color: rgb(247, 192, 121);
+}
+
+/* Id */
+#title {
+    text-shadow: 1px 1px 10px;
+}
+
+.container{
+    height: 100vh;
+}
+
+.item-container {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    margin: 30px;
+    margin-top: 0px;
+}
+
+.main-container > .item-1{
+    background-color: violet ;
+}
+
+.main-container .item-2{
+    background-color: rgb(181, 6, 6) ;
+}
+
+.main-container > .item-3{
+    background-color: blue;
+}
+
+.main-container > .item-4{
+    background-color: aqua;
+}
+
+.item-1, .item-2 {
+    border: 2px solid black;
+}
+
+.container{
+    display: flex; /* Establece un contenedor flexible */
+    justify-content: space-around; /* Alinea los elementos hijos en el contenedor de forma uniforme */
+    align-items: center; /* Alinea los elementos hijos al final del contenedor */
+    flex-direction: column; /* Cambia la dirección del eje principal a columna */
 }
